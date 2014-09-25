@@ -38,6 +38,24 @@ public  class Functions extends haxe.lang.HxObject implements haxe.root.Interfac
 	}
 	
 	
+	public   int compare(java.lang.String a, java.lang.String b)
+	{
+		java.lang.String a1 = a.toLowerCase();
+		java.lang.String b1 = b.toLowerCase();
+		if (( a1.compareTo(b1) < 0 )) 
+		{
+			return -1;
+		}
+		
+		if (( a1.compareTo(b1) > 0 )) 
+		{
+			return 1;
+		}
+		
+		return 0;
+	}
+	
+	
 	public   java.lang.String lookAndSay(java.lang.String s)
 	{
 		if (( ( s == null ) || haxe.lang.Runtime.valEq(s, "") )) 
@@ -90,8 +108,8 @@ public  class Functions extends haxe.lang.HxObject implements haxe.root.Interfac
 		current.__set(0, 0);
 		nextItem.__set(0, 1);
 		lim = ((int) (haxe.lang.Runtime.toInt(limit1.__get(0))) );
-		haxe.lang.Function hasNext = new haxe.root.Functions_FibIter_51__Fun(((haxe.root.Array<java.lang.Object>) (limit1) ));
-		haxe.lang.Function next = new haxe.root.Functions_FibIter_53__Fun(((haxe.root.Array<java.lang.Object>) (nextItem) ), ((haxe.root.Array<java.lang.Object>) (limit1) ), ((haxe.root.Array<java.lang.Object>) (current) ));
+		haxe.lang.Function hasNext = new haxe.root.Functions_FibIter_58__Fun(((haxe.root.Array<java.lang.Object>) (limit1) ));
+		haxe.lang.Function next = new haxe.root.Functions_FibIter_60__Fun(((haxe.root.Array<java.lang.Object>) (limit1) ), ((haxe.root.Array<java.lang.Object>) (current) ), ((haxe.root.Array<java.lang.Object>) (nextItem) ));
 		return lim;
 	}
 	
@@ -108,12 +126,105 @@ public  class Functions extends haxe.lang.HxObject implements haxe.root.Interfac
 	}
 	
 	
+	public   haxe.root.Array<java.lang.Object> hsl2rgb(double h, double s, double l)
+	{
+		double q = 0.0;
+		if (( l < 0.5 )) 
+		{
+			q = ( l * (( 1 + s )) );
+		}
+		 else 
+		{
+			q = ( ( l + s ) - ( l * s ) );
+		}
+		
+		double p = ( ( 2 * l ) - q );
+		double hk = ( ( h % 360 ) / 360 );
+		double tr = ( hk + 0.333333333333333315 );
+		double tg = hk;
+		double tb = ( hk - 0.333333333333333315 );
+		haxe.root.Array<java.lang.Object> tc = new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (tr) ), ((java.lang.Object) (tg) ), ((java.lang.Object) (tb) )});
+		{
+			int _g1 = 0;
+			int _g = tc.length;
+			while (( _g1 < _g ))
+			{
+				int n = _g1++;
+				double t = ((double) (haxe.lang.Runtime.toDouble(tc.__get(n))) );
+				if (( t < 0 )) 
+				{
+					t += ((double) (1) );
+				}
+				
+				if (( t > 1 )) 
+				{
+					t -= ((double) (1) );
+				}
+				
+				if (( t < 0.166666666666666657 )) 
+				{
+					tc.__set(n, ( p + ( ( (( q - p )) * 6 ) * t ) ));
+				}
+				 else 
+				{
+					if (( t < 0.5 )) 
+					{
+						tc.__set(n, q);
+					}
+					 else 
+					{
+						if (( t < 0.66666666666666663 )) 
+						{
+							tc.__set(n, ( p + ( ( (( q - p )) * 6 ) * (( 0.66666666666666663 - t )) ) ));
+						}
+						 else 
+						{
+							tc.__set(n, p);
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		haxe.root.Array<java.lang.Object> ret = new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (haxe.lang.Runtime.toDouble(tc.__get(0))) )) ), ((java.lang.Object) (((double) (haxe.lang.Runtime.toDouble(tc.__get(1))) )) ), ((java.lang.Object) (((double) (haxe.lang.Runtime.toDouble(tc.__get(2))) )) )});
+		return ret;
+	}
+	
+	
 	@Override public   java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
 		{
 			boolean __temp_executeDef36 = true;
 			switch (field.hashCode())
 			{
+				case 1204797340:
+				{
+					if (field.equals("hsl2rgb")) 
+					{
+						__temp_executeDef36 = false;
+						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("hsl2rgb"))) );
+					}
+					
+					break;
+				}
+				
+				
+				case 950484197:
+				{
+					if (field.equals("compare")) 
+					{
+						__temp_executeDef36 = false;
+						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("compare"))) );
+					}
+					
+					break;
+				}
+				
+				
 				case 1525935928:
 				{
 					if (field.equals("findOpenLockers")) 
@@ -184,6 +295,30 @@ public  class Functions extends haxe.lang.HxObject implements haxe.root.Interfac
 			boolean __temp_executeDef37 = true;
 			switch (field.hashCode())
 			{
+				case 1204797340:
+				{
+					if (field.equals("hsl2rgb")) 
+					{
+						__temp_executeDef37 = false;
+						return this.hsl2rgb(((double) (haxe.lang.Runtime.toDouble(dynargs.__get(0))) ), ((double) (haxe.lang.Runtime.toDouble(dynargs.__get(1))) ), ((double) (haxe.lang.Runtime.toDouble(dynargs.__get(2))) ));
+					}
+					
+					break;
+				}
+				
+				
+				case 950484197:
+				{
+					if (field.equals("compare")) 
+					{
+						__temp_executeDef37 = false;
+						return this.compare(haxe.lang.Runtime.toString(dynargs.__get(0)), haxe.lang.Runtime.toString(dynargs.__get(1)));
+					}
+					
+					break;
+				}
+				
+				
 				case 1525935928:
 				{
 					if (field.equals("findOpenLockers")) 

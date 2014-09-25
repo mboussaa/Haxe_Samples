@@ -72,8 +72,8 @@ M java.util.Set
 M java.lang.ref.Reference
 M haxe.root.Functions
 C haxe.root.Functions
-C haxe.root.Functions_FibIter_51__Fun
-C haxe.root.Functions_FibIter_53__Fun
+C haxe.root.Functions_FibIter_58__Fun
+C haxe.root.Functions_FibIter_60__Fun
 M java.internal.Exceptions
 C haxe.lang.Exceptions
 C haxe.lang.HaxeException
