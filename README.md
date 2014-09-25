@@ -1,7 +1,7 @@
 Haxe_Samples
 ============
 
-Installation : \n
+Installation : <br>
 1- Download Installer through http://haxe.org/download/ 
 2- Install Java Compiler command line : haxelib install hxjava
 3- Install Cpp Compiler command line : haxelib install hxjcpp 
