@@ -1,13 +1,13 @@
-Haxe_Samples
+Haxe_Samples <br> 
 ============
 
-Installation : <br>
-1- Download Installer through http://haxe.org/download/ 
-2- Install Java Compiler command line : haxelib install hxjava
-3- Install Cpp Compiler command line : haxelib install hxjcpp 
+<H2>Installation :<H2> <br>
+1- Download Installer through http://haxe.org/download/ <br>
+2- Install Java Compiler command line : haxelib install hxjava<br>
+3- Install Cpp Compiler command line : haxelib install hxjcpp <br><br>
 
-Running application :
-0- Go through "snippets" repository.
-1- haxe build.hxml (-main Main -cpp cpp or "-main Main -java java" for java target)
-2- cd java or cpp repository 
-3- ./Main or java -jar Main.java  
+<H2>Running application :<H2> <br>
+0- Go through "snippets" repository.<br>
+1- haxe build.hxml (-main Main -cpp cpp or "-main Main -java java" for java target)<br>
+2- cd java or cpp repository <br>
+3- ./Main or java -jar Main.java  <br>
