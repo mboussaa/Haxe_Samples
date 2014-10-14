@@ -18,7 +18,6 @@ src/haxe/lang/Runtime.java
 src/haxe/lang/EmptyObject.java
 src/haxe/lang/StringExt.java
 src/haxe/lang/StringRefl.java
-src/haxe/root/EReg.java
 src/haxe/lang/FieldLookup.java
 src/haxe/lang/Iterator.java
 src/haxe/lang/Iterable.java

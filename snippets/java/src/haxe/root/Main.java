@@ -22,7 +22,7 @@ public  class Main extends haxe.lang.HxObject
 	}
 	
 	
-	public static   void __hx_ctor__Main(haxe.root.Main __temp_me5)
+	public static   void __hx_ctor__Main(haxe.root.Main __temp_me4)
 	{
 		{
 		}
@@ -39,21 +39,16 @@ public  class Main extends haxe.lang.HxObject
 			while (( _g < 11 ))
 			{
 				int i = _g++;
-				java.lang.System.out.println(((java.lang.Object) (test) ));
+				haxe.Log.trace.__hx_invoke2_o(0.0, test, 0.0, new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"Main", "Main.hx", "main"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (15) )) )})));
 				test = fun.lookAndSay(test);
 			}
 			
 		}
 		
-		boolean resp = fun.isValidEmail("medmed@med.com");
-		haxe.Log.trace.__hx_invoke2_o(0.0, resp, 0.0, new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"Main", "Main.hx", "main"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (22) )) )})));
 		int x = fun.FibIter(10);
-		java.lang.System.out.println(((java.lang.Object) (x) ));
-		fun.findOpenLockers(100);
+		haxe.Log.trace.__hx_invoke2_o(((double) (x) ), haxe.lang.Runtime.undefined, 0.0, new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"Main", "Main.hx", "main"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (27) )) )})));
 		int j = fun.compare("bla", "blabla");
 		haxe.Log.trace.__hx_invoke2_o(((double) (j) ), haxe.lang.Runtime.undefined, 0.0, new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"Main", "Main.hx", "main"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (36) )) )})));
-		haxe.root.Array<java.lang.Object> rgb = fun.hsl2rgb(((double) (2) ), ((double) (3) ), ((double) (4) ));
-		haxe.Log.trace.__hx_invoke2_o(0.0, rgb, 0.0, new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"Main", "Main.hx", "main"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (41) )) )})));
 	}
 	
 	

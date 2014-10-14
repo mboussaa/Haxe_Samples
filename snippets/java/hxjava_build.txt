@@ -43,7 +43,6 @@ M java.nio.file.DirectoryStream
 M java.net.URLConnection
 M java.lang.Runnable
 M java.nio.channels.AsynchronousChannel
-M java.util.regex.Pattern
 M java.sun.util.LocaleServiceProviderPool
 M java.util.Date
 M haxe.root.Std
@@ -65,7 +64,6 @@ M java.util.concurrent.ExecutorService
 M haxe.PosInfos
 M haxe.root.Interface
 C haxe.root.Interface
-M java.io.IOException
 M java.lang.reflect.TypeVariable
 M java.lang.Boolean
 M java.util.Set
@@ -107,7 +105,6 @@ M java.util.AbstractSet
 M java.nio.channels.ScatteringByteChannel
 M java.util.ListIterator
 M java.lang.Double
-M java.lang.Process
 M java.internal.HxObject
 C haxe.lang.IHxObject
 C haxe.lang.HxObject
@@ -116,7 +113,6 @@ C haxe.lang.Enum
 M java.internal.Runtime
 C haxe.lang.Runtime
 E haxe.lang.EmptyObject
-M java.lang.ProcessBuilder
 M java.nio.FloatBuffer
 M java.nio.file.LinkOption
 M java.lang.Number
@@ -142,8 +138,6 @@ M java.net.URL
 M java.net.ContentHandlerFactory
 M java.lang.reflect.Method
 M java.nio.channels.InterruptibleChannel
-M haxe.root.EReg
-C haxe.root.EReg
 M java.nio.CharBuffer
 M java.internal.FieldLookup
 C haxe.lang.FieldLookup
@@ -218,7 +212,6 @@ M java.nio.Buffer
 M java.lang.Comparable
 M java.util.concurrent.Callable
 M java.util.concurrent.Future
-M java.util.regex.MatchResult
 M java.nio.channels.GatheringByteChannel
 M java.nio.file.attribute.FileStoreAttributeView
 M java.io.Console
@@ -268,13 +261,11 @@ M java.security.cert.Certificate
 M java.io.Serializable
 M java.nio.channels.ReadableByteChannel
 M java.net.SocketAddress
-M java.io.EOFException
 M java.sun.util.locale.BaseLocale
 M java.nio.file.attribute.FileAttributeView
 M haxe.root.Class
 M java.lang.reflect.Field
 M java.io.Flushable
-M java.util.regex.Matcher
 M java.security.PublicKey
 M sys.db.Types
 M java.nio.channels.FileChannel

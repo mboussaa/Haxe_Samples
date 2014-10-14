@@ -12,23 +12,23 @@ class Main {
     //lookAndSay Function
     var test = "1";
         for (i in 0...11) {
-            Sys.println(test);
+            trace(test);
             test = fun.lookAndSay(test);
         }
 
     
     //isValidEmail Function
-    var resp = fun.isValidEmail("medmed@med.com");
-    trace(resp);
+    //var resp = fun.isValidEmail("medmed@med.com");
+    //trace(resp);
 
     
     //FibIter
     var x = fun.FibIter(10);
-    Sys.println(x);
+    trace(x);
 
     
     //100 doors
-    fun.findOpenLockers(100);
+    //fun.findOpenLockers(100);
 
     
     //compare 
@@ -37,8 +37,8 @@ class Main {
     
 
     //hsl2rgb
-    var rgb= fun.hsl2rgb(2,3,4);
-    trace(rgb);
+    //var rgb= fun.hsl2rgb(2,3,4);
+    //trace(rgb);
 }
 }
 

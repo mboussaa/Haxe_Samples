@@ -38,11 +38,11 @@ public function new()
         return results;
     }
 
-    public function isValidEmail(email:String):Bool
-{
-    var emailExpression : EReg = ~/^[\w-\.]{2,}@[ÅÄÖåäö\w-\.]{2,}\.[a-z]{2,6}$/i;
-    return emailExpression.match( email );
-}
+//    public function isValidEmail(email:String):Bool
+//{
+//    var emailExpression : EReg = ~/^[\w-\.]{2,}@[ÅÄÖåäö\w-\.]{2,}\.[a-z]{2,6}$/i;
+//    return emailExpression.match( email );
+//}
 
 public function  FibIter(limit:Int):Int
 {
@@ -68,13 +68,14 @@ public function  FibIter(limit:Int):Int
     return lim;
 }
 
-   public function findOpenLockers(n : Int):Void
+ /*  public function findOpenLockers(n : Int):Void
     {
         var i = 1;
  
         while((i*i) <= n)
         {
-            Sys.print(i*i + "\n");
+            //Sys.print(i*i + "\n");
+            trace(i*i + "\n");
             i++;
         }
     }
@@ -121,7 +122,7 @@ public function  FibIter(limit:Int):Int
         return ret;
     }
 
-   
+   */
 
 }
 
